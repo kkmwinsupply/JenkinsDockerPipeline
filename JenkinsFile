@@ -1,0 +1,15 @@
+pipeleine {
+  agent {
+    label 'slave'
+  }
+
+  stages {
+    stage('Hello') {
+      steps {
+        sh 'java -version'
+        echo 'Get Working Directory'
+        sh 'pwd'
+      }
+    }
+  }
+}
