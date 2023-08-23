@@ -1,10 +1,10 @@
-pipeline {
-  stages {
-    stage('Hello') {
-      steps {
-        sh 'node --version'
-        sh 'pwd'
-      }
+pipeline{
+    stages{
+        stage('Build'){
+            steps{
+                sh 'node --version'
+                sh 'pwd'
+            }
+        }
     }
-  }
 }
