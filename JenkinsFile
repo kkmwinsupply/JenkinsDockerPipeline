@@ -1,12 +1,10 @@
-pipeline {
-    agent none
-    stages {
-        stage('Build') {
-            steps {
-                node {
-                    sh 'node --version'
-                    sh 'pwd'
-                }
+pipeline{
+agent none
+    stages{
+        stage('Build'){
+            steps{
+                sh 'node --version'
+                sh 'pwd'
             }
         }
     }
